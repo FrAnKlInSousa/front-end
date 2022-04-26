@@ -5,6 +5,9 @@ body{
 #title, .subtitle, .post-title{
     color: #FCFFE7;
 }
+#title{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .post-title{
     font-size: 16px;
@@ -15,4 +18,13 @@ body{
     padding: 10px;
     border: 2px solid #000;
     margin: 10px;
+}
+
+.image-chocolate{
+    margin-left: 500px;
+    border-radius: 10%;
+}
+
+footer{
+    padding-left: 10px;
 }
