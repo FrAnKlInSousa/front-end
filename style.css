@@ -2,6 +2,9 @@ body{
     background-color: #E0D8B0;
 }
 
+.navbar{
+    background-color: #CE9461;
+}
 #title, .subtitle, .post-title{
     color: #FCFFE7;
 }
@@ -27,4 +30,10 @@ body{
 
 footer{
     padding-left: 10px;
+}
+
+.natureza{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
