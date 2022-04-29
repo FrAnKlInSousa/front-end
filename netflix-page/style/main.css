@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+  --branco-gelo: #aaa;
+}
+/* elementos base */
+body{
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo{
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: var(--branco-gelo);
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: white;
+}
+
+/* filme principal */
+.filme-principal{
+  font-size: 16px;
+  background:
+    background: url('../images/movies/house-of-cards.jpg');
+
+  height: 400px;
+  background-size: cover;
+}
