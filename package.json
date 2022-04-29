@@ -1,0 +1,11 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:FrAnKlInSousa/front-end.git",
+  "author": "franklin <frank.fkn.23@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
