@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./cascading.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>CSS</h1>
+  <p>
+    O css é lido de cima para baixo. Além disso, são levados em consideração 3 fatores:
+    <ol>
+      <li>Origem do estilo</li>
+      <li>Especificidade</li>
+      <li>Importância</li>
+    </ol>
+  
+  </p>
+  <h2>Origem do estilo</h2>
+  <p>inline &gt;&gt; tag style &gt;&gt; tag link</p>
+
+  <h2>Especificidade</h2>
+  <p>
+    É um cálculo matemático, onde cada tipo de seletor e origem do estilo possuem valores a serem considerados.
+    <br>Quanto maior o número (ou a soma dos números), mais específico é e, consequentemente, terá o valor aplicado. <br>
+    Caso tenha o mesmo valor, o que foi citado por último é o que determinará o valor a ser aplicado.
+    <p>
+      0. Universal selector, combinators e negation pseudo-class (<code>:not()</code>) <br>
+      1. Element type selector e pseudo-elements (<code>::before</code>, <code>::after</code>) <br>
+      10. Classes e attribute selectors (<code>[type=&quot;radio&quot;]</code>) <br>
+      100. ID selector <br>
+      1000. Inline <br>
+    </p>
+  </p>
+  <h3>Exemplos:</h3>
+  <div>Esse texto deve ficar na cor vermelha</div>
+  <div class="verde">Esse texto deve ficar na cor verde</div>
+  <div class="verde" id="azul">Esse texto deve ficar na cor azul</div>
+  <div class="verde">Esse <strong>texto</strong> deve ficar na cor verde, EXCETO a palavra texto,
+    <br>pois a palavra texto tem o valor 12 (10 da classe mais 2 dos selectors (div e strong))</div>
+  <div class="verde">Esse <strong class="verde">texto</strong> deve ficar na cor verde, inclusive a palavra texto</div>
+  <div class="laranja">Esse <strong>texto</strong> deve ficar na cor rosa, inclusive a palavra texto</div>
+  <div>Esse <span style="color: green">texto</span> deve ficar na cor verde</div>
+    <h2>!Important</h2>
+    <p>Não é considerada uma boa prática usar o <code>!important</code>, mas nem sempre é possível evitar o uso.<br>
+      Um dos casos em que costuma ser &quot;permitido&quot; usar é quando está sendo utilizada alguma biblioteca externa onde não se tem o controle.</p>
+</body>
+</html>

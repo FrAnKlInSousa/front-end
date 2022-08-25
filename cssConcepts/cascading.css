@@ -1,0 +1,18 @@
+div{
+  color: rgb(255, 0, 0);
+}
+
+*{
+  color: black;
+}
+
+.laranja strong{
+  color: orange;
+}
+#azul{
+  color: blue;
+}
+.verde{
+  color: green;
+}
+
